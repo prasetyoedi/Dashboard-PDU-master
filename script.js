@@ -17,9 +17,8 @@ while (start <= end) {
 
 console.log(waktu);
 
-
 // Data untuk setiap variabel pada setiap chart
-var dataVar1 = [10, 20, 20, 25, 15, 22, 18, 10, 20, 20, 25, 15, 22, 18, 10, 20, 20, 28];
+var dataVar1 = [10, 20, 20, 25, 15, 22, 18, 10, 20, 20, 25, 15, 22, 18, 10, 20, 20, 80];
 var dataVar2 = [15, 25, 35, 35, 15, 27, 23, 15, 25, 35, 35, 15, 27, 23, 15, 25, 35, 35];
 var dataVar3 = [30, 30, 50, 35, 25, 22, 28, 30, 30, 50, 35, 25, 22, 28, 30, 30, 50, 35];
 var dataVar4 = [15, 35, 45, 40, 30, 37, 33, 15, 35, 45, 40, 30, 37, 33, 15, 35, 45, 40];
@@ -34,31 +33,31 @@ var myChart1 = new Chart(ctx1, {
         datasets: [{
             label: 'Air Rate (scfm)',
             data: dataVar1,
-            borderColor: 'rgba(255, 99, 132, 1)',
+            borderColor: '#1d1dff',
             borderWidth: 1,
             fill: false
         }, {
             label: 'Mud Conduct. In',
             data: dataVar2,
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#00ff00',
             borderWidth: 1,
             fill: false
         }, {
             label: 'Block Position',
             data: dataVar3,
-            borderColor: 'rgba(255, 206, 86, 1)',
+            borderColor: '#ff00ff',
             borderWidth: 1,
             fill: false
         }, {
             label: 'WOB',
             data: dataVar4,
-            borderColor: 'rgba(75, 192, 192, 1)',
+            borderColor: '#800000',
             borderWidth: 1,
             fill: false
         }, {
             label: 'ROP',
             data: dataVar5,
-            borderColor: 'rgba(153, 102, 255, 1)',
+            borderColor: '#00ffff',
             borderWidth: 1,
             fill: false
         }]
@@ -66,7 +65,6 @@ var myChart1 = new Chart(ctx1, {
     options: {
         maintainAspectRatio: false,
         indexAxis: 'y',
-
     }
 });
 
@@ -76,27 +74,27 @@ var myChart2 = new Chart(ctx2, {
     data: {
         labels: waktu,
         datasets: [{
-            label: 'Mud Conduct. Out',
+            label: 'Mud Conduct. Out gratik 2',
             data: dataVar2,
-            borderColor: 'rgba(255, 99, 132, 1)',
+            borderColor: '#0000ff',
             borderWidth: 1,
             fill: false
         }, {
             label: 'Torque',
             data: dataVar3,
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#00ff00',
             borderWidth: 1,
             fill: false
         }, {
             label: 'RPM (total)',
             data: dataVar1,
-            borderColor: 'rgba(255, 206, 86, 1)',
+            borderColor: '#ff00ff',
             borderWidth: 1,
             fill: false
         }, {
             label: 'Hookload',
             data: dataVar5,
-            borderColor: 'rgba(75, 192, 192, 1)',
+            borderColor: '#00ffff',
             borderWidth: 1,
             fill: false
         }]
@@ -114,33 +112,33 @@ var myChart3 = new Chart(ctx3, {
     data: {
         labels: waktu,
         datasets: [{
-            label: 'Var 1',
+            label: 'H2S-1',
             data: dataVar5,
-            borderColor: 'rgba(255, 99, 132, 1)',
+            borderColor: '#0000ff',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 2',
+            label: 'Mud Flow Out (%)',
             data: dataVar4,
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#00ff00',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 3',
+            label: 'Total SPM',
             data: dataVar3,
-            borderColor: 'rgba(255, 206, 86, 1)',
+            borderColor: '#ff00ff',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 4',
+            label: 'Standpipe Press.',
             data: dataVar2,
-            borderColor: 'rgba(75, 192, 192, 1)',
+            borderColor: '#00ffff',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 5',
+            label: 'Mud Flow In',
             data: dataVar1,
-            borderColor: 'rgba(153, 102, 255, 1)',
+            borderColor: '#800000',
             borderWidth: 1,
             fill: false
         }]
@@ -158,33 +156,33 @@ var myChart4 = new Chart(ctx4, {
     data: {
         labels: waktu,
         datasets: [{
-            label: 'Var 1',
+            label: 'CO2-1',
             data: dataVar3,
-            borderColor: 'rgba(255, 99, 132, 1)',
+            borderColor: '#ff0000',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 2',
+            label: 'Gas',
             data: dataVar1,
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: '#00ff00',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 3',
+            label: 'Mud Temperature In',
             data: dataVar5,
-            borderColor: 'rgba(255, 206, 86, 1)',
+            borderColor: '#ff00ff',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 4',
+            label: 'Mud Temperature Out',
             data: dataVar2,
-            borderColor: 'rgba(75, 192, 192, 1)',
+            borderColor: '#00ffff',
             borderWidth: 1,
             fill: false
         }, {
-            label: 'Var 5',
+            label: 'Tank Vol. (total)',
             data: dataVar4,
-            borderColor: 'rgba(153, 102, 255, 1)',
+            borderColor: '#800000',
             borderWidth: 1,
             fill: false
         }]
