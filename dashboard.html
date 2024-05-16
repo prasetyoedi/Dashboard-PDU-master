@@ -11,12 +11,18 @@
     </script>
     <title>Monitoring</title>
     <link rel="icon" href="assets/icon.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <div class="shadow-box top-bar d-flex justify-content-between align-items-center">
+<body style="background-color: #F6F6F7;">
+    <!-- <div class="shadow-box top-bar d-flex justify-content-between align-items-center">
         <img src="assets/logo-small.png" alt="Logo PDU">
         <div class="d-flex">
             <div class="tab-active d-flex align-items-center">
@@ -40,260 +46,424 @@
                 </a>
             </div>
         </div>
+    </div> -->
+
+    <div class="w3-sidebar w3-bar-block w3-xxlarge" style="width:70px">
+        <a href="#" class="w3-bar-item w3-button"><img src="assets/img/logo.png" alt="Logo PDU"></a>
+        <a href="#" class="w3-bar-item w3-button"><img src="assets/img/monitor.png" alt="ic_monitor"></a>
+        <a href="#" class="w3-bar-item w3-button"> <img src="assets/img/history.png" alt="ic_admin"></a>
     </div>
 
-    <div class="d-flex gap-3 px-3 ">
-        <!-- Legenda chart 1 -->
-        <div class="w-100 shadow-box px-3 py-2">
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3 mt-2">
-                    <span class="bodytext">Air Rate (scfm)</span>
-                    <div class="tag">512</div>
-                </div>
-                <div style="height: 2px; background-color: #1d1dff;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">2000</span>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            style="color: rgba(41, 38, 65, 0.50); margin-left: 15px;">Organization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            style="color: var(--Monochrome-100, #292641); font-weight: 500;">Pertamina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-left: 32px;">Well Name </a>
+                    </li>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            IJN 9-1
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-left: 32px;">Rig Name </a>
+                    </li>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EPI-9
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-left: 32px; color: rgba(41, 38, 65, 0.50);">Rig
+                            Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rig
+                            Tripping Out</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-left: 32px; color: rgba(41, 38, 65, 0.50);">Date</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">2024-03-07 13:53:10</a>
+                    </li>
+                </ul>
             </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Mud Conduct. In</span>
-                    <div class="tag">512</div>
+        </div>
+    </nav>
+
+    <div class="row mt-3">
+        <div class="col-md-2 kol1">
+            <div class="wrap">
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
                 </div>
-                <div style="height: 2px; background-color:#00ff00;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">m m h o</span>
-                    <span class="bodytext gray">10000</span>
+
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
                 </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Block Position</span>
-                    <div class="tag">2479</div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
                 </div>
-                <div style="height: 2px; background-color: #ff00ff;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">m</span>
-                    <span class="bodytext gray">150</span>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
                 </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">WOB</span>
-                    <div class="tag">27</div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
                 </div>
-                <div style="height: 2px; background-color: #800000;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">klb</span>
-                    <span class="bodytext gray">50</span>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
                 </div>
-            </div>
-            <div>
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">ROP</span>
-                    <div class="tag">1381</div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
                 </div>
-                <div style="height: 2px; background-color: #00ffff;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">m/hr</span>
-                    <span class="bodytext gray">2000</span>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">m</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">M</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">M</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">M</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">M</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">M</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">M</p>
+                </div>
+                <div class="d-flex mt-2">
+                    <p class="nama">Bit Depth</p>
+                    <div class="nilai text-end">1779.95</div>
+                    <p class="satuan">M</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-10 kol2">
+            <div class="d-flex gap-3 px-3 ">
+                <!-- Legenda chart 1 -->
+                <div class="w-100 shadow-box px-3 py-2">
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3 mt-2">
+                            <span class="bodytext">Air Rate (scfm)</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color: #1d1dff;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">2000</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Mud Conduct. In</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color:#00ff00;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">m m h o</span>
+                            <span class="bodytext gray">10000</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Block Position</span>
+                            <div class="tag">2479</div>
+                        </div>
+                        <div style="height: 2px; background-color: #ff00ff;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">m</span>
+                            <span class="bodytext gray">150</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">WOB</span>
+                            <div class="tag">27</div>
+                        </div>
+                        <div style="height: 2px; background-color: #800000;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">klb</span>
+                            <span class="bodytext gray">50</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">ROP</span>
+                            <div class="tag">1381</div>
+                        </div>
+                        <div style="height: 2px; background-color: #00ffff;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">m/hr</span>
+                            <span class="bodytext gray">2000</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Legenda chart 2 -->
-        <div class="w-100 shadow-box px-3 py-2">
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3 mt-5">
-                    <span class="bodytext">Mud Conduct. Out</span>
-                    <div class="tag">512</div>
-                </div>
-                <div style="height: 2px; background-color: #0000ff;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">m m h o</span>
-                    <span class="bodytext gray">10000</span>
-                </div>
-            </div>
+                <!-- Legenda chart 2 -->
+                <div class="w-100 shadow-box px-3 py-2">
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3 mt-5">
+                            <span class="bodytext">Mud Conduct. Out</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color: #0000ff;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">m m h o</span>
+                            <span class="bodytext gray">10000</span>
+                        </div>
+                    </div>
 
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Torque</span>
-                    <div class="tag">512</div>
-                </div>
-                <div style="height: 2px; background-color: #00ff00;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">klb.ft</span>
-                    <span class="bodytext gray">2000</span>
-                </div>
-            </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Torque</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color: #00ff00;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">klb.ft</span>
+                            <span class="bodytext gray">2000</span>
+                        </div>
+                    </div>
 
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">RPM Total</span>
-                    <div class="tag">2479</div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">RPM Total</span>
+                            <div class="tag">2479</div>
+                        </div>
+                        <div style="height: 2px; background-color: #ff00ff"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">150</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Hookload</span>
+                            <div class="tag">27</div>
+                        </div>
+                        <div style="height: 2px; background-color: #00ffff"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">klb</span>
+                            <span class="bodytext gray">50</span>
+                        </div>
+                    </div>
                 </div>
-                <div style="height: 2px; background-color: #ff00ff"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">150</span>
-                </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Hookload</span>
-                    <div class="tag">27</div>
-                </div>
-                <div style="height: 2px; background-color: #00ffff"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">klb</span>
-                    <span class="bodytext gray">50</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- Legenda chart 3 -->
-        <div class="w-100 shadow-box px-3 py-2">
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3 mt-4">
-                    <span class="bodytext">H2S-1</span>
-                    <div class="tag">512</div>
+                <!-- Legenda chart 3 -->
+                <div class="w-100 shadow-box px-3 py-2">
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                            <span class="bodytext">H2S-1</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color: #0000ff;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">2000</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Mud Flow Out (%)</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color: #00ff00;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">10000</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Total SPM</span>
+                            <div class="tag">2479</div>
+                        </div>
+                        <div style="height: 2px; background-color: #ff00ff;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">150</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Standpipe Press.</span>
+                            <div class="tag">27</div>
+                        </div>
+                        <div style="height: 2px; background-color: #00ffff"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">50</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Mud Flow In</span>
+                            <div class="tag">1381</div>
+                        </div>
+                        <div style="height: 2px; background-color: #800000"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">2000</span>
+                        </div>
+                    </div>
                 </div>
-                <div style="height: 2px; background-color: #0000ff;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">2000</span>
-                </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Mud Flow Out (%)</span>
-                    <div class="tag">512</div>
-                </div>
-                <div style="height: 2px; background-color: #00ff00;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">10000</span>
-                </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Total SPM</span>
-                    <div class="tag">2479</div>
-                </div>
-                <div style="height: 2px; background-color: #ff00ff;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">150</span>
-                </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Standpipe Press.</span>
-                    <div class="tag">27</div>
-                </div>
-                <div style="height: 2px; background-color: #00ffff"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">50</span>
-                </div>
-            </div>
-            <div>
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Mud Flow In</span>
-                    <div class="tag">1381</div>
-                </div>
-                <div style="height: 2px; background-color: #800000"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">2000</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- Legenda chart 4 -->
-        <div class="w-100 shadow-box px-3 py-2">
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3 mt-4">
-                    <span class="bodytext">CO2-1</span>
-                    <div class="tag">512</div>
-                </div>
-                <div style="height: 2px; background-color: #ff0000;"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">2000</span>
+                <!-- Legenda chart 4 -->
+                <div class="w-100 shadow-box px-3 py-2">
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                            <span class="bodytext">CO2-1</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color: #ff0000;"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">2000</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Gas</span>
+                            <div class="tag">512</div>
+                        </div>
+                        <div style="height: 2px; background-color: #00ff00"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">10000</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Mud Temperature In</span>
+                            <div class="tag">2479</div>
+                        </div>
+                        <div style="height: 2px; background-color: #ff00ff"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">150</span>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Mud Temperature Out</span>
+                            <div class="tag">27</div>
+                        </div>
+                        <div style="height: 2px; background-color: #00ffff"></div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="bodytext gray">0</span>
+                            <span class="bodytext gray">50</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="bodytext">Tank Vol. (total)</span>
+                            <div class="tag">1381</div>
+                        </div>
+                        <div style="height: 2px; background-color: #800000"></div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span class="bodytext gray">0</span>
+                        <span class="bodytext gray">2000</span>
+                    </div>
                 </div>
             </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Gas</span>
-                    <div class="tag">512</div>
+            <div class="d-flex gap-3 p-3" style="height: 67vh">
+                <div class="shadow-box p-2 w-100">
+                    <canvas class="chart" id="myChart1"></canvas>
                 </div>
-                <div style="height: 2px; background-color: #00ff00"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">10000</span>
+                <div class="shadow-box p-2 w-100">
+                    <canvas class="chart" id="myChart2"></canvas>
                 </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Mud Temperature In</span>
-                    <div class="tag">2479</div>
+                <div class="shadow-box p-2 w-100">
+                    <canvas class="chart" id="myChart3"></canvas>
                 </div>
-                <div style="height: 2px; background-color: #ff00ff"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">150</span>
+                <div class="shadow-box p-2 w-100">
+                    <canvas class="chart" id="myChart4"></canvas>
                 </div>
-            </div>
-            <div class="mb-2">
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Mud Temperature Out</span>
-                    <div class="tag">27</div>
-                </div>
-                <div style="height: 2px; background-color: #00ffff"></div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="bodytext gray">0</span>
-                    <span class="bodytext gray">50</span>
-                </div>
-            </div>
-            <div>
-                <div class="d-flex align-items-center gap-3">
-                    <span class="bodytext">Tank Vol. (total)</span>
-                    <div class="tag">1381</div>
-                </div>
-                <div style="height: 2px; background-color: #800000"></div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between">
-                <span class="bodytext gray">0</span>
-                <span class="bodytext gray">2000</span>
             </div>
         </div>
     </div>
-    </div>
 
-    <div class="d-flex gap-3 p-3" style="height: 67vh">
-        <div class="shadow-box p-2 w-100">
-            <canvas class="chart" id="myChart1"></canvas>
-        </div>
-        <div class="shadow-box p-2 w-100">
-            <canvas class="chart" id="myChart2"></canvas>
-        </div>
-        <div class="shadow-box p-2 w-100">
-            <canvas class="chart" id="myChart3"></canvas>
-        </div>
-        <div class="shadow-box p-2 w-100">
-            <canvas class="chart" id="myChart4"></canvas>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
